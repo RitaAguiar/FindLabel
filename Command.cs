@@ -242,7 +242,7 @@ namespace FindLabel
 
                         // mostra a caixa de dialogo que confirma que o label foi encontrado
                         TaskDialog.Show("FindLabel",
-                                string.Format("Foi encontrada uma dimensao com a etiqueta {0} na vista {1}.", sublist[0], sublist[1]));
+                                string.Format("A dimension was found with label {0} in the {1} view.", sublist[0], sublist[1]));
 
                         ++n; // n+1
                     }
@@ -253,7 +253,7 @@ namespace FindLabel
 
                         // mostra a caixa de dialogo que confirma que o label foi encontrado
                         TaskDialog.Show("FindLabel",
-                            string.Format("Foi encontrada uma dimensao com a etiqueta {0} no modo edicao do elemento selecionado, com a id {1}, na vista {2}.", sublist[0], sublist[1], sublist[2]));
+                            string.Format("A dimension with label {0} was found in the editor mode of the selected element, with id {1}, in the {2} view.", sublist[0], sublist[1], sublist[2]));
 
                         ++n2; // n2+1
                     }
@@ -263,7 +263,7 @@ namespace FindLabel
             if (IsAnyLabelFound == false) // se IsLabelFound e falso
             {
                 TaskDialog.Show("FindLabel",
-                    string.Format("Nao existe nenhuma dimensao associada a etiqueta {0}.", InputData.LabelValue)); // mostra a caixa de dialogo que confirma que o label nao foi encontrado
+                    string.Format("There is no dimension associated with label {0}.", InputData.LabelValue)); // mostra a caixa de dialogo que confirma que o label nao foi encontrado
             }
         }
 

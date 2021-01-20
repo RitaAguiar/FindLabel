@@ -1,5 +1,6 @@
-﻿//
-// (C) Copyright 2003-2019 by Autodesk, Inc. All rights reserved.
+﻿#region Copyright
+//
+// (C) Copyright 2003-2021 by Autodesk, Inc. All rights reserved.
 //
 // Permission to use, copy, modify, and distribute this software in
 // object code form for any purpose and without fee is hereby granted
@@ -19,6 +20,7 @@
 // restrictions set forth in FAR 52.227-19 (Commercial Computer
 // Software - Restricted Rights) and DFAR 252.227-7013(c)(1)(ii)
 // (Rights in Technical Data and Computer Software), as applicable. 
+#endregion Copyright
 
 #region namespaces
 using Autodesk.Revit.UI;

@@ -1,5 +1,6 @@
+#region Copyright
 //
-// (C) Copyright 2003-2019 by Autodesk, Inc. All rights reserved.
+// (C) Copyright 2003-2021 by Autodesk, Inc. All rights reserved.
 //
 // Permission to use, copy, modify, and distribute this software in
 // object code form for any purpose and without fee is hereby granted
@@ -19,6 +20,7 @@
 // restrictions set forth in FAR 52.227-19 (Commercial Computer
 // Software - Restricted Rights) and DFAR 252.227-7013(c)(1)(ii)
 // (Rights in Technical Data and Computer Software), as applicable. 
+#endregion Copyright
 
 #region namespaces
 using System;
@@ -65,6 +67,7 @@ namespace FindLabel
             pushbutton.Image = icon16;
             pushbutton.LargeImage = icon32;
             pushbutton.ToolTip = Message;
+            pushbutton.AvailabilityClassName = typeof(Availability).FullName;
         }
 
         #region BmpImageSource Method
@@ -114,14 +117,14 @@ namespace FindLabel
             // Try to create ribbon panel.
             try
             {
-                RibbonPanel panel = a.CreateRibbonPanel(tab, "Finishes");
+                RibbonPanel panel = a.CreateRibbonPanel(tab, "Labels");
             }
             catch { }
             // Search existing tab for your panel.
             List<RibbonPanel> panels = a.GetRibbonPanels(tab);
             foreach (RibbonPanel p in panels)
             {
-                if (p.Name == "Finishes")
+                if (p.Name == "Labels")
                 {
                     ribbonPanel = p;
                 }
