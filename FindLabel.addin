@@ -1,17 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <RevitAddIns>
-  <AddIn Type="Command">
-    <Text>Command FindLabel</Text>
-    <Description>FindLabel</Description>
-    <Assembly>FindLabel.dll</Assembly>
-    <FullClassName>FindLabel.Command</FullClassName>
-    <ClientId>70c26065-cca9-4ab9-9e5c-7014aedf97c9</ClientId>
-    <VendorId>Rita Aguiar</VendorId>
-    <VendorDescription>Rita Aguiar, rita.aguiar@outlook.com</VendorDescription>
-  </AddIn>
   <AddIn Type="Application">
     <Name>Application FindLabel</Name>
-    <Assembly>FindLabel.dll</Assembly>
+    <Assembly>C:\ProgramData\Autodesk\Revit\Addins\2021\FindLabel.dll</Assembly>
     <FullClassName>FindLabel.Application</FullClassName>
     <ClientId>9898f0cd-2463-4022-a98c-890f0f91290b</ClientId>
     <VendorId>Rita Aguiar</VendorId>
