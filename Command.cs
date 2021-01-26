@@ -48,10 +48,10 @@ namespace FindLabel
             bool IsAnyLabelFound = false; // IsAnyLabelFound e falso
 
             List<View> views = new List<View>(); // Lista das vistas dos Labels encontrados
-            List<Dimension> dimensions = new List<Dimension>(); // Lista das dimensıes dos Labels encontrados
+            List<Dimension> dimensions = new List<Dimension>(); // Lista das dimens√µes dos Labels encontrados
 
-            List<ElementId> gs = new List<ElementId>(); // Lista das ids dos elementos generic form onde se encontram uma ou mais inst‚ncias do label
-            List<IList<ElementId>> cgs = new List<IList<ElementId>>(); // Lista das ids dos elementos (collector) generic form onde se encontram uma ou mais inst‚ncias do label
+            List<ElementId> gs = new List<ElementId>(); // Lista das ids dos elementos generic form onde se encontram uma ou mais inst√¢ncias do label
+            List<IList<ElementId>> cgs = new List<IList<ElementId>>(); // Lista das ids dos elementos (collector) generic form onde se encontram uma ou mais inst√¢ncias do label
 
             #region View specific dimensions
 
@@ -61,7 +61,7 @@ namespace FindLabel
 
             foreach (Dimension dim in collectorD) // para cada dimensao dim no collectorD
             {
-                bool IsViewSpec = dim.ViewSpecific; // se dim pertence a uma vista especÌfica
+                bool IsViewSpec = dim.ViewSpecific; // se dim pertence a uma vista espec√≠fica
 
                 if (IsViewSpec)
                 {
@@ -209,10 +209,10 @@ namespace FindLabel
                             {
                                 LabelsFound.Add(new List<string> { InputData.LabelValue, g.ToString(), viewname });
 
-                                // gs e a lista com todas as ids das generic forms gs onde se encontram uma ou mais inst‚ncias do label
+                                // gs e a lista com todas as ids das generic forms gs onde se encontram uma ou mais inst√¢ncias do label
                                 gs.Add(g);
 
-                                //cgs e a lista dos elementos de coletor de generic form cg onde se encontra uma ou mais inst‚ncias do label
+                                //cgs e a lista dos elementos de coletor de generic form cg onde se encontra uma ou mais inst√¢ncias do label
                                 cgs.Add(cg);
 
                                 IsAnyLabelFound = true; // Um label foi encontrado
@@ -226,7 +226,7 @@ namespace FindLabel
             if (IsAnyLabelFound == true) // se IsLabelFound e true
             {
                 TaskDialog.Show("FindLabel",
-                    string.Format("N˙mero de dimensıes encontradas: {0}.", LabelsFound.Count())); // mostra a caixa de dialogo que confirma quantos labels foram encontrados
+                    string.Format("Number of labels found: {0}.", LabelsFound.Count())); // mostra a caixa de dialogo que confirma quantos labels foram encontrados
 
                 int n = 0;
                 int n2 = 0;
@@ -237,8 +237,8 @@ namespace FindLabel
                     {
                         uidoc.ActiveView = views[n]; // abre a vista onde encontra dim
                         UIView uiview = uidoc.GetOpenUIViews().FirstOrDefault(q => q.ViewId == dimensions[n].OwnerViewId); // uiview e a vista aberta onde encontra dim 
-                        BoundingBoxXYZ bbox = dimensions[n].get_BoundingBox(views[n]); // Dimensıes da janela da vista 
-                        uiview.ZoomAndCenterRectangle(bbox.Min, bbox.Max); // abre a vista uivew segundo as dimensıes da janela definidas em bbox
+                        BoundingBoxXYZ bbox = dimensions[n].get_BoundingBox(views[n]); // Dimens√µes da janela da vista 
+                        uiview.ZoomAndCenterRectangle(bbox.Min, bbox.Max); // abre a vista uivew segundo as dimens√µes da janela definidas em bbox
 
                         // mostra a caixa de dialogo que confirma que o label foi encontrado
                         TaskDialog.Show("FindLabel",
