@@ -2,7 +2,7 @@
 
 ![Revit API 2021 Badge](https://img.shields.io/badge/Revit%20API-2021-blue) ![Platform Windows Badge](https://img.shields.io/badge/Platform-Windows-lightgrey) ![.NET 4.8 Badge](https://img.shields.io/badge/.NET-4.8-blue)
 
-A Revit plugin to find in views the labels associatied to dimensions in a family document.
+A Revit plugin to find view dimensions associated with the searched label in a family document.
 
 ## Demo
 
