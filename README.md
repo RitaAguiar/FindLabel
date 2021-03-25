@@ -14,7 +14,7 @@ The most up-to-date version provided here is for Revit 2021.
 
 ## Installation
 
-You install FindLabel by launching the executable file ![RitaAguiarPlugins2021.msi](https://github.com/RitaAguiar/FindLabel/blob/master/RitaAguiarPlugins 2021/Debug/RitaAguiarPlugins 2021.msi)
+You install FindLabel by launching the executable file ![RitaAguiarPlugins2021.msi](https://github.com/RitaAguiar/FindLabel/blob/master/RitaAguiarPlugins2021/Debug/RitaAguiarPlugins2021.msi)
 
 ## Author
 
